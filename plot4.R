@@ -15,12 +15,12 @@ par(mfrow = c(2,2))
 par(mar = c(4,4,1,1))
 with(powcon,{
       plot(datetime, Global_active_power, type = 'l',
-           xlab = '', ylab = 'Global Active Power (kilowatts)', cex.lab = .8)
+           xlab = '', ylab = 'Global Active Power (kilowatts)', cex.lab = 1)
       # plot the values for datetime and voltage
       plot(datetime, Voltage, type = 'l')
       # plot for submetering values
       plot(datetime, Sub_metering_1,type = "n", ylab = 'Energy sub metering',
-           xlab='', cex.lab = .8)
+           xlab='', cex.lab = 1)
       points(datetime, Sub_metering_1, type = 'l')
       points(datetime, Sub_metering_2, col = 'red', type = 'l')
       points(datetime, Sub_metering_3, col = 'blue', type = 'l')
